@@ -13,16 +13,16 @@ public class TetrisBlockListener implements GameBlockListener {
 		new LB(  7, 13, 19, 0),
 		new LB(  8, 13, 19, 0),
 		//RIGHT
-		new LB(  6, 10, 19, 1),
-		new LB(  6, 11, 19, 1),
-		new LB(  6, 12, 19, 1),
+		new LB(  6, 10, 19, 3),
+		new LB(  6, 11, 19, 3),
+		new LB(  6, 12, 19, 3),
 		//DOWN
 		new LB(  7,  9, 19, 2),
 		new LB(  8,  9, 19, 2),
 		//LEFT
-		new LB(  9, 10, 19, 3),
-		new LB(  9, 11, 19, 3),
-		new LB(  9, 12, 19, 3),
+		new LB(  9, 10, 19, 1),
+		new LB(  9, 11, 19, 1),
+		new LB(  9, 12, 19, 1),
 	};
 	
 	public TetrisBlockListener(Tetris game) {
