@@ -22,15 +22,16 @@ public class Tetris extends GameRunnable {
 	
 	public void tick() {
 		ticksleft--;
+		
+		if (pressedUp)    { pressedUp    = false; currentblock.tryRotate(); }
+		if (pressedRight) { pressedRight = false; currentblock.tryMoveRight(); }
+		if (pressedLeft)  { pressedLeft  = false; currentblock.tryMoveLeft(); }
+		
 		if (ticksleft <= 0) { 
 			if (currentblock == null) {
 				currentblock = new TetrisBlock(this, TetrisBlock.Shape.random());
 			}
 			ticksleft = tickTime;
-			
-			if (pressedUp)    { pressedUp    = false; currentblock.tryRotate(); }
-			if (pressedRight) { pressedRight = false; currentblock.tryMoveRight(); }
-			if (pressedLeft)  { pressedLeft  = false; currentblock.tryMoveLeft(); }
 			
 			if (currentblock.canMoveDown()) {
 				currentblock.moveDown();
