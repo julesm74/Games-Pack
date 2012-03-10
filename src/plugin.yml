@@ -1,0 +1,17 @@
+name: Games-pack
+main: com.wrcreedrs.games.GamesLoader
+version: 0.1
+commands:
+  games:
+    description: Displays a list of games of Games-pack
+    usage: /<command>
+    
+  play:
+    description: Play an argumented game
+    usage: /<command> <name of the game>
+    
+  stopplay:
+    description: Halts any game that you are playing
+    usage: /<command>
+    
+    
